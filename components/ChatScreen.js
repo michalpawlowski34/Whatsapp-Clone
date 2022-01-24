@@ -36,6 +36,7 @@ function ChatScreen({chat, messages}) {
             .where('email', '==', getRecipientEmail(chat.users, user))
     )
     const showMessages = () => {
+        scrollToBottom();
         if(messagesSnapshot) { 
             return messagesSnapshot.docs.map(message => (
                 <Message 
