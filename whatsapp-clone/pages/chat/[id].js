@@ -18,7 +18,7 @@ function ChatPage( {chat, messages} ) {
 
             <Sidebar />
             <ChatContainer>
-                <ChatScreen />
+                <ChatScreen chat={chat} messages={messages}/>
             </ChatContainer>
 
         </Container>
